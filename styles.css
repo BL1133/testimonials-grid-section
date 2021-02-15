@@ -78,8 +78,6 @@ ul {
 .card {
   border-radius: 0.8rem;
   padding: 1rem 3.2rem 5rem 3.2rem;
-  height: 100%;
-  width: 100%;
 }
 header {
   display: flex;
@@ -109,7 +107,6 @@ header img {
   font-size: 1.9rem;
   font-weight: 500;
   margin-bottom: 1.3rem;
-  position: relative;
 }
 @media only screen and (max-height: 850px) {
   .testimonial__quote {
@@ -117,17 +114,6 @@ header img {
   }
   .testimonial__header {
     font-size: 1.5rem;
-  }
-}
-@media only screen and (max-height: 1025px) {
-  .testimonial__quote {
-    font-size: 1.1rem;
-  }
-  .testimonial__header {
-    font-size: 1.3rem;
-  }
-  .card {
-    padding: 1rem 2.2rem 2rem 2.2rem;
   }
 }
 .testimonial__quote {
@@ -139,18 +125,44 @@ header img {
   color: rgb(222, 176, 236);
   font-size: 40rem;
   position: absolute;
-  width: 100%;
-  transform: translate(65%, -19.1%);
+  transform: translate(210%, -19.1%);
   opacity: 42%;
-  z-index: -1;
 }
-
+@media only screen and (min-width: 751px) and (max-width: 1075px) {
+  .quotation-mark {
+    transform: translate(150%, -19.1%);
+  }
+}
+@media only screen and (min-width: 751px) and (max-width: 865px) {
+  .quotation-mark {
+    transform: translate(95%, -19.1%);
+  }
+}
+@media only screen and (max-width: 560px) {
+  .quotation-mark {
+    transform: translate(150%, -19.1%);
+  }
+}
+@media only screen and (max-width: 451px) {
+  .quotation-mark {
+    transform: translate(100%, -19.1%);
+  }
+}
+@media only screen and (max-width: 390px) {
+  .quotation-mark {
+    transform: translate(90%, -19.1%);
+  }
+}
 .card-1 {
   grid-area: card-1;
   background-color: var(--moderateViolet);
 }
 .card-1 img {
   border: 3.5px solid rgb(157, 117, 190);
+}
+.card-1 .testimonial__header,
+.card-1 .testimonial__quote {
+  z-index: 1;
 }
 .card-2 {
   grid-area: card-2;
